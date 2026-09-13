@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart — Nostra</title>
+<meta name="description" content="Review your Nostra cart and checkout your selected pieces.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announce">Free shipping on orders over ₹4,000 · Returns accepted within 30 days</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="wordmark">Nostra</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <a href="cart.html" class="icon-btn" aria-label="Bag">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span>0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="index.html">Home</a>
+    <a href="collections.html">Collections</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</header>
+
+<main class="cart-page">
+  <div class="wrap cart-layout">
+    <section>
+      <div class="cart-header">
+        <h1>Your cart</h1>
+        <span class="cart-count" id="cartCountRow">0 items</span>
+      </div>
+
+      <div class="empty-cart" id="cartEmpty">
+        <strong>Your bag is empty</strong>
+        <span>Browse the collection and add a few pieces you’ll keep for years.</span>
+      </div>
+
+      <div class="cart-items" id="cartItems"></div>
+    </section>
+
+    <aside class="summary-box">
+      <h2>Order summary</h2>
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <strong id="summarySubtotal">₹0</strong>
+      </div>
+      <div class="summary-row">
+        <span>Shipping</span>
+        <strong id="summaryShipping">₹0</strong>
+      </div>
+      <div class="summary-row total">
+        <span>Total</span>
+        <strong id="summaryTotal">₹0</strong>
+      </div>
+      <button class="checkout-btn" type="button">Proceed to checkout</button>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="wordmark" style="margin-bottom:14px;">Nostra</div>
+        <p>Considered clothing for the long term. Designed in small batches, built to be repaired rather than replaced.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="collections.html">Outerwear</a></li>
+          <li><a href="collections.html">Knitwear</a></li>
+          <li><a href="collections.html">Trousers</a></li>
+          <li><a href="collections.html">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="contact.html">Our workshop</a></li>
+          <li><a href="contact.html">Shipping &amp; returns</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="hairline">
+    <div class="footer-bottom">
+      <span>© 2026 Nostra Clothing Co.</span>
+      <span>Made with honest materials.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

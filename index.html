@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nostra — Considered clothing, made to last</title>
+<meta name="description" content="Nostra is a considered clothing label. Shop outerwear, knitwear and accessories built from honest materials.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announce">Free shipping on orders over ₹4,000 · Returns accepted within 30 days</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="wordmark">Nostra</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <a href="cart.html" class="icon-btn" aria-label="Bag">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span>0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="index.html">Home</a>
+    <a href="collections.html">Collections</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-kicker">Autumn / Winter collection</p>
+        <h1>Clothing built for the years, not the season.</h1>
+        <p class="hero-sub">Nostra makes a small number of things well: outerwear, knitwear and essentials cut from honest materials, designed to earn their place in your wardrobe.</p>
+        <div class="hero-actions">
+          <a href="collections.html" class="btn btn-primary">Shop the collection</a>
+          <a href="contact.html" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <span class="panel-no">No. 01</span>
+        <span class="panel-tag">The Fieldcoat, in ash brick</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Considered materials</span>
+      <span>Cut in small batches</span>
+      <span>Made to be repaired</span>
+      <span>Shipped worldwide</span>
+      <span>Considered materials</span>
+      <span>Cut in small batches</span>
+      <span>Made to be repaired</span>
+      <span>Shipped worldwide</span>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Shop by category</h2>
+        <span class="section-num">04 groups</span>
+      </div>
+      <div class="tile-grid">
+        <a class="tile" href="collections.html">
+          <div class="tile-swatch sw-1"></div>
+          <div>
+            <h3>Outerwear</h3>
+            <p>Coats and jackets for the coldest months.</p>
+            <span class="tile-link">View pieces</span>
+          </div>
+        </a>
+        <a class="tile" href="collections.html">
+          <div class="tile-swatch sw-2"></div>
+          <div>
+            <h3>Knitwear</h3>
+            <p>Heavyweight wool and cotton knits.</p>
+            <span class="tile-link">View pieces</span>
+          </div>
+        </a>
+        <a class="tile" href="collections.html">
+          <div class="tile-swatch sw-5"></div>
+          <div>
+            <h3>Trousers</h3>
+            <p>Tailored and relaxed fits, built to move.</p>
+            <span class="tile-link">View pieces</span>
+          </div>
+        </a>
+        <a class="tile" href="collections.html">
+          <div class="tile-swatch sw-3"></div>
+          <div>
+            <h3>Accessories</h3>
+            <p>The small things that finish an outfit.</p>
+            <span class="tile-link">View pieces</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="wrap editorial">
+      <div class="editorial-figure"></div>
+      <div class="editorial-body">
+        <p class="lede">"We'd rather sell you one coat you wear for ten winters than ten coats you wear once."</p>
+        <p>Nostra started in a single workshop with a simple brief: make fewer things, and make them properly. Every fabric is chosen for how it ages, not just how it photographs — raw selvedge denim, brushed alpaca, waxed cotton canvas.</p>
+        <p>We work with the same small mills season after season, which means we know exactly where every garment comes from, and so will you.</p>
+        <a href="contact.html" class="btn btn-outline">Read our story</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<section class="newsletter">
+  <div class="wrap newsletter-grid">
+    <h2>Join the mailing list for early access to new drops.</h2>
+    <div>
+      <form class="newsletter-form" id="newsletterForm">
+        <label for="newsletterEmail" class="visually-hidden" style="position:absolute;left:-9999px;">Email address</label>
+        <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+        <button type="submit">Sign up</button>
+      </form>
+      <p class="newsletter-note" id="newsletterNote"></p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="wordmark" style="margin-bottom:14px;">Nostra</div>
+        <p>Considered clothing for the long term. Designed in small batches, built to be repaired rather than replaced.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="collections.html">Outerwear</a></li>
+          <li><a href="collections.html">Knitwear</a></li>
+          <li><a href="collections.html">Trousers</a></li>
+          <li><a href="collections.html">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="contact.html">Our workshop</a></li>
+          <li><a href="contact.html">Shipping &amp; returns</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="hairline">
+    <div class="footer-bottom">
+      <span>© 2026 Nostra Clothing Co.</span>
+      <span>Made with honest materials.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collections — Nostra</title>
+<meta name="description" content="Browse the full Nostra collection: outerwear, knitwear, trousers and accessories. Search and filter by category and price.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announce">Free shipping on orders over ₹4,000 · Returns accepted within 30 days</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="wordmark">Nostra</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collections.html" class="active">Collections</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="cart.html" class="icon-btn" aria-label="Bag">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span>0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="index.html">Home</a>
+    <a href="collections.html">Collections</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="wrap">
+      <p class="hero-kicker">The full range</p>
+      <h1>Collections</h1>
+      <p>Every piece Nostra currently makes, in one place. Search by name, or filter by category and price to narrow things down.</p>
+    </div>
+  </section>
+
+  <div class="shop-toolbar">
+    <div class="wrap toolbar-row">
+      <div class="search-field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" id="searchInput" placeholder="Search products — try 'coat' or 'wool'" aria-label="Search products">
+      </div>
+      <button class="mobile-filter-toggle" id="filterToggle">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="10" y1="18" x2="14" y2="18"/></svg>
+        Filter
+      </button>
+      <div class="sort-field">
+        <label for="sortSelect" style="position:absolute;left:-9999px;">Sort by</label>
+        <select id="sortSelect">
+          <option value="featured">Sort: Featured</option>
+          <option value="price-asc">Price: Low to high</option>
+          <option value="price-desc">Price: High to low</option>
+          <option value="name-asc">Name: A to Z</option>
+        </select>
+      </div>
+      <span class="results-count" id="resultsCount"></span>
+    </div>
+  </div>
+
+  <div class="wrap shop-body">
+
+    <aside class="filters" id="filterPanel">
+      <div class="filter-group">
+        <p class="filter-title">Category</p>
+        <label class="filter-option">
+          <input type="checkbox" name="category" value="Outerwear">
+          Outerwear <span class="count"></span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" name="category" value="Knitwear">
+          Knitwear <span class="count"></span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" name="category" value="Trousers">
+          Trousers <span class="count"></span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" name="category" value="Accessories">
+          Accessories <span class="count"></span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" name="category" value="Footwear">
+          Footwear <span class="count"></span>
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <p class="filter-title">Availability</p>
+        <label class="filter-option">
+          <input type="checkbox" id="onSaleOnly">
+          On sale
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" id="inStockOnly">
+          In stock only
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <p class="filter-title">Max price <span id="priceLabel">₹25,000</span></p>
+        <div class="price-inputs">
+          <input type="range" id="priceRange" min="1500" max="25000" step="500" value="25000">
+        </div>
+        <p class="price-readout">Showing items up to the selected price</p>
+      </div>
+
+      <span class="clear-filters" id="clearFilters">Clear all filters</span>
+    </aside>
+
+    <section>
+      <div class="product-grid" id="productGrid">
+        <!-- Product cards are rendered here by script.js -->
+      </div>
+    </section>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="wordmark" style="margin-bottom:14px;">Nostra</div>
+        <p>Considered clothing for the long term. Designed in small batches, built to be repaired rather than replaced.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="collections.html">Outerwear</a></li>
+          <li><a href="collections.html">Knitwear</a></li>
+          <li><a href="collections.html">Trousers</a></li>
+          <li><a href="collections.html">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="contact.html">Our workshop</a></li>
+          <li><a href="contact.html">Shipping &amp; returns</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="hairline">
+    <div class="footer-bottom">
+      <span>© 2026 Nostra Clothing Co.</span>
+      <span>Made with honest materials.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
